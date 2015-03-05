@@ -1,6 +1,7 @@
 src_files:
     - javascripts/vendor/**/*.js
     - javascripts/src/**/*.js
+    - public/javascripts/**/*.js
 
 stylesheets:
 
@@ -12,4 +13,4 @@ spec_files:
 
 src_dir:
 spec_dir:
-spec_helper: 
+spec_helper:
