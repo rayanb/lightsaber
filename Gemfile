@@ -9,6 +9,7 @@ gem 'activerecord'
 
 gem 'rake'
 gem 'shotgun'
+gem 'faker'
 
 gem 'bcrypt'
 

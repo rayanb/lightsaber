@@ -1,3 +1,13 @@
 .message {
   font-size: 5em;
 }
+
+.users{
+  text-align: center;
+}
+
+.user {
+  font-size: 2em;
+  background-color:grey;
+  margin-bottom: 20px;
+}

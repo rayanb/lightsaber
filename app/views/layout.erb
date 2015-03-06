@@ -6,9 +6,17 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src='javascripts/application.js'></script>
   <script src='javascripts/calculator.js'></script>
+  <script src='javascripts/model.js'></script>
+  <script src='javascripts/view.js'></script>
   <title><%= @title || "LightSaber" %></title>
 </head>
 <body>
+  <div class="header">
+    <span> LightSaber </span>
+    <span> Rayan </span>
+  </div>
+  <div class="container">
     <%= yield %>
+  </div>
 </body>
 </html>

@@ -23,4 +23,15 @@ $(document).on('ready', function() {
       }
     })
   })
+
+  $(document).on('click', '.all_users', function(event){
+    event.preventDefault();
+    $.get(getAjax(event).url, function(response){
+      $.map(response, function(user){
+        var user = new User(user)
+        $('.users').append(htmlUser(user.name, user.description));
+      })
+    })
+  })
+
 })
