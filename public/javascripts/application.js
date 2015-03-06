@@ -34,4 +34,24 @@ $(document).on('ready', function() {
     })
   })
 
+  $(document).on('click', '.private', function(event){
+    event.preventDefault();
+    $.map(getPrivateMembers,
+      function(member){
+        console.log(member.name);
+        console.log(member)
+        return false;
+      });
+  })
+
+  $(document).on('click', '.public', function(event){
+    event.preventDefault();
+    $.map(getPublicMembers,
+      function(member){
+        console.log(member.name);
+        console.log(member)
+        return true;
+      });
+  })
+
 })
